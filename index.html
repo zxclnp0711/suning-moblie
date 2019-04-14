@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/flexible.js"></script>
+    <title>苏宁易购(Suning.com)-送货更准时、价格更超值、上新货更快</title>
+</head>
+
+<body>
+    <!-- 头部导航栏 -->
+    <div class="head-nav">
+        <div><a href="#"><img src="img/下载.png" alt=""></a></div>
+        <div>
+            <input type="text" placeholder="超级抢购日家电一元秒">
+        </div>
+        <div><a href="#">登录</a></div>
+    </div>
+    <!-- 底部导航栏 -->
+    <div class="foot-nav">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/1-1.png" alt="">
+                    <span>猜你喜欢</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/1-2.png" alt="">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/1-3.png" alt="">
+                    <span>必抢清单</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/1-4.png" alt="">
+                    <span>购物车</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/1-5.png" alt="">
+                    <span>我的易购</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="focus swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="upload/ad1.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="upload/ad2.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="upload/ad3.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="upload/ad4.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="upload/ad5.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="upload/ad6.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="upload/ad7.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="upload/ad8.jpg" alt=""></a></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="focus-2">
+        <a href="#">
+            <img src="upload/ad-big.webp" alt="">
+        </a>
+    </div>
+    <div class="entry-warpar">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/1.webp" alt="">
+                    <span>爆款手机</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/2.webp" alt="">
+                    <span>苏宁超市</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/3.webp" alt="">
+                    <span>生活家电</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/4.webp" alt="">
+                    <span>苏宁生鲜</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/5.webp" alt="">
+                    <span>母婴完具</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/6.webp" alt="">
+                    <span>限时抢购</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/7.webp" alt="">
+                    <span>赚钱</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/8.webp" alt="">
+                    <span>苏宁拼购</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/9.webp" alt="">
+                    <span>苏宁家电</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/10.webp" alt="">
+                    <span>签到有礼</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.focus', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+    <script>
+        function scroll() {
+            var top = $(".focus-2").offset().top; //获取导航栏变色的位置距顶部的高度
+            var scrollTop = $(window).scrollTop(); //获取当前窗口距顶部的高度
+            if (scrollTop < top) {
+                $('.head-nav').css('background', 'transparent');
+            } else {
+                $('.head-nav').css('background', '#FFBD00');
+            }
+        }
+        $(window).on('scroll', function () {
+            scroll()
+        });
+    </script>
+</body>
+
+</html>
