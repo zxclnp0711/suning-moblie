@@ -1,0 +1,222 @@
+@media screen and (min-width:750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    font-size: .32rem;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    height: 2000px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background-color: #F2F2F2;
+}
+
+.head-nav {
+    position: fixed;
+    display: flex;
+    z-index: 99;
+    top: 0;
+    width: 10rem;
+    height: 1.173333rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 25/75rem;
+        left: 110/75rem;
+        height: 36/75rem;
+        width: 36/75rem;
+        background: url(../img/下载1.png);
+        background-size: 36/75rem;
+    }
+
+    div {
+        &:nth-child(1) {
+            width: 44/75rem;
+            height: 70/75rem;
+            margin: 10/75rem 26/75rem 8/75rem 24/75rem;
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            flex: 1;
+            background-color: rgba(255, 255, 255, .8);
+            margin: 15/75rem 0;
+            border-radius: 27/75rem;
+            padding-left: 60/75rem;
+
+            input {
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: transparent;
+                outline: none;
+                font-size: 24/75rem;
+            }
+        }
+
+        &:nth-child(3) {
+            width: 75/75rem;
+            height: 70/75rem;
+            line-height: 70/75rem;
+            font-size: 24/75rem;
+            text-align: center;
+            color: #fff;
+            margin: 9.5/75rem;
+        }
+    }
+}
+
+.foot-nav {
+    position: fixed;
+    bottom: 0;
+    width: 750/75rem;
+    height: 100/75rem;
+    max-width: 750/75rem;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+
+    ul {
+        display: flex;
+        width: 750/75rem;
+        height: 100/75rem;
+
+        li {
+            flex: 20%;
+
+            a {
+                display: block;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100/75rem;
+                text-align: center;
+
+                img {
+                    width: 56/75rem;
+                    height: 56/75rem;
+                    margin: 0 47/75rem;
+                }
+
+                span {
+                    display: block;
+                    color: black;
+                    font-size: 20/75rem;
+                }
+            }
+        }
+    }
+}
+
+.focus {
+    position: relative;
+    width: 750/75rem;
+    height: 368/75rem;
+    overflow: hidden;
+
+    .swiper-slide {
+        width: 750/75rem;
+        height: 368/75rem;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+        img {
+            width: 750/75rem;
+            height: 368/75rem;
+        }
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        border-bottom: 10px;
+    }
+
+
+}
+
+.focus-2 {
+    width: 750/75rem;
+    height: 210/75rem;
+
+    img {
+        width: 750/75rem;
+        height: 210/75rem;
+    }
+}
+
+.entry-warpar {
+    background-color: #fff;
+    width: 750/75rem;
+    height: 324/75rem;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            flex: 20%;
+
+            a {
+                display: block;
+                text-align: center;
+
+                img {
+                    width: 84/75rem;
+                    margin: 24/75rem 33/75rem 0 33/75rem;
+                }
+
+                span {
+                    font-size: 22/75rem;
+                    line-height: 28/75rem;
+                    color: rgb(102, 102, 102)
+                }
+            }
+        }
+    }
+}
